@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #5A86E6, #36bbdc);
+    
+}
+
+
+h3{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    animation:animacion-titulo 2s ease-in-out infinite alternate;
+
+}
+@keyframes animacion-titulo{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    
+}
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform-origin: center; /* Punto de origen de la transformación */
+}
+
+
+.card:hover {
+  
+    box-shadow: 0 0px 10px #006ec2, 28 0 10px #36d4dc;
+    transform: scale(0.9); /* Efecto de zoom al pasar el mouse */
+ }
